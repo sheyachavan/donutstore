@@ -28,7 +28,8 @@ Response:
 ```
 ##### An endpoint for clients to check their queue position and approximate wait time
 http://localhost:3000/donut-store/api/v1/getQueuePositionAndWaitTime/{Cust_id}
-``` Response:
+``` 
+Response:
 {
 "creationTime": null,
 "waitTime": 1,
@@ -41,7 +42,9 @@ http://localhost:3000/donut-store/api/v1/getQueuePositionAndWaitTime/{Cust_id}
 ##### An endpoint which allows Jim’s manager to see all entries in the queue with the
 approximate wait time.
 http://localhost:3000/donut-store/api/v1/getAllOrdersAndWaitTime
-``` Response:
+
+``` 
+Response:
 [
     {
     "orderId": 1005,
@@ -60,7 +63,8 @@ http://localhost:3000/donut-store/api/v1/getAllOrdersAndWaitTime
 
 http://localhost:3000/donut-store/api/v1/nextDelivery
 
-``` Response:
+``` 
+Response:
 [
     {
     "creationTime": null,
@@ -75,7 +79,8 @@ http://localhost:3000/donut-store/api/v1/nextDelivery
 ##### An endpoint to cancel an order.
 http://localhost:3000/donut-store/api/v1/cancelOrder/{Cust_id}
 
-``` Response:
+``` 
+Response:
 {
 "code": "02",
 "message": "Order deleted successfully"
